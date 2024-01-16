@@ -1,0 +1,7 @@
+ {
+   "port" : 10000,
+   "host" : "127.0.0.1",
+   "wait" : 1,
+   "quiet" : false,
+   "players" : [ ["Tom", "ldasg", "take-turn", 2], ["Jerry", "dag"], ["Carol", "ldasg"] ]
+ }

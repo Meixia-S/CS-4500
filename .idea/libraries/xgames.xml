@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="xgames">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Q/out/artifacts/xgames_jar/xgames.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

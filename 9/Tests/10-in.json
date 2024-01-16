@@ -1,0 +1,181 @@
+{
+  "map": [
+    [
+      0,
+      [
+        0,
+        {
+          "color": "yellow",
+          "shape": "clover"
+        }
+      ]
+    ]
+  ],
+  "tile*": [
+    {
+      "color": "green",
+      "shape": "8star"
+    },
+    {
+      "color": "blue",
+      "shape": "square"
+    },
+    {
+      "color": "yellow",
+      "shape": "circle"
+    },
+    {
+      "color": "purple",
+      "shape": "clover"
+    },
+    {
+      "color": "yellow",
+      "shape": "diamond"
+    },
+    {
+      "color": "orange",
+      "shape": "circle"
+    }
+  ],
+  "players": [
+    {
+      "name": "A",
+      "score": 0,
+      "tile*": [
+        {
+          "color": "green",
+          "shape": "8star"
+        },
+        {
+          "color": "blue",
+          "shape": "square"
+        },
+        {
+          "color": "yellow",
+          "shape": "circle"
+        },
+        {
+          "color": "purple",
+          "shape": "clover"
+        },
+        {
+          "color": "yellow",
+          "shape": "diamond"
+        },
+        {
+          "color": "orange",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "score": 0,
+      "tile*": [
+        {
+          "color": "blue",
+          "shape": "square"
+        },
+        {
+          "color": "blue",
+          "shape": "square"
+        },
+        {
+          "color": "yellow",
+          "shape": "circle"
+        },
+        {
+          "color": "purple",
+          "shape": "clover"
+        },
+        {
+          "color": "yellow",
+          "shape": "diamond"
+        },
+        {
+          "color": "orange",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "score": 0,
+      "tile*": [
+        {
+          "color": "green",
+          "shape": "8star"
+        },
+        {
+          "color": "blue",
+          "shape": "square"
+        },
+        {
+          "color": "purple",
+          "shape": "clover"
+        },
+        {
+          "color": "purple",
+          "shape": "clover"
+        },
+        {
+          "color": "yellow",
+          "shape": "diamond"
+        },
+        {
+          "color": "orange",
+          "shape": "circle"
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "score": 0,
+      "tile*": [
+        {
+          "color": "green",
+          "shape": "8star"
+        },
+        {
+          "color": "blue",
+          "shape": "square"
+        },
+        {
+          "color": "purple",
+          "shape": "clover"
+        },
+        {
+          "color": "purple",
+          "shape": "clover"
+        },
+        {
+          "color": "yellow",
+          "shape": "diamond"
+        },
+        {
+          "color": "yellow",
+          "shape": "diamond"
+        }
+      ]
+    }
+  ]
+}
+
+[
+  [
+    "A",
+    "dag"
+  ],
+  [
+    "B",
+    "dag"
+  ],
+  [
+    "C",
+    "dag"
+  ],
+  [
+    "D",
+    "dag"
+  ]
+]

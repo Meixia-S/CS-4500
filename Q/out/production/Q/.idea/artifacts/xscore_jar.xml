@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xscore:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/xscore_jar</output-path>
+    <root id="archive" name="Q.jar">
+      <element id="module-output" name="Q" />
+      <element id="library" level="project" name="xscore" />
+    </root>
+  </artifact>
+</component>

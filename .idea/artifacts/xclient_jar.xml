@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xclient.jar">
+    <output-path>$PROJECT_DIR$/10</output-path>
+    <root id="archive" name="xclient.jar">
+      <element id="module-output" name="stoic-armadillos" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Q/out/artifacts/xstrategy_jar/xstrategy.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Q/out/artifacts/xgames_jar/xgames.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/8/xgames-with-observer.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.13.3/jackson-core-2.13.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,273 @@
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-0/0-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-0/0-out.json)
+((/course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-0/0-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-0/0-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-1/1-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-1/1-out.json)
+jsexpr->player does not match JActorSpec schema [options beyond 'plain' don't match] 
+ ["Aiden","ldasg","new-tiles","3"]
+jsexpr->string : value does not satisfy string?
+  [["Meixia","dag"],["Aiden","ldasg","new-tiles","3"]]
+value does not match JActors schema:
+#f
+'(("Meixia" "dag") ("Aiden" "ldasg" "new-tiles" "3"))
+xbaddies: invalid JSON:  JActors: see above
+---------------------------------
+(*** score 0)
+(*** on)
+'(#hasheq((map . ((0 (0 #hasheq((color . "yellow") (shape . "star"))))))
+          (players
+           .
+           (#hasheq((name . "Meixia")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "green") (shape . "circle"))
+                      #hasheq((color . "blue") (shape . "8star"))
+                      #hasheq((color . "purple") (shape . "clover"))
+                      #hasheq((color . "purple") (shape . "clover"))
+                      #hasheq((color . "yellow") (shape . "diamond"))
+                      #hasheq((color . "red") (shape . "circle")))))
+            #hasheq((name . "Aiden")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "red") (shape . "star"))
+                      #hasheq((color . "green") (shape . "square"))
+                      #hasheq((color . "purple") (shape . "clover"))
+                      #hasheq((color . "purple") (shape . "clover"))
+                      #hasheq((color . "purple") (shape . "clover"))
+                      #hasheq((color . "purple") (shape . "clover")))))))
+          (tile*
+           .
+           (#hasheq((color . "purple") (shape . "clover"))
+            #hasheq((color . "green") (shape . "star"))
+            #hasheq((color . "purple") (shape . "clover"))
+            #hasheq((color . "purple") (shape . "clover"))
+            #hasheq((color . "orange") (shape . "diamond"))
+            #hasheq((color . "purple") (shape . "clover")))))
+  (("Meixia" "dag") ("Aiden" "ldasg" "new-tiles" "3")))
+(*** expected)
+'((("Meixia") ("Aiden")))
+(*** but received)
+'(((plain fast with-newline plain-unicode) ("xbaddies: things went wrong")))
+
+
+()
+((passed 0) (total 1) (partial-score 0))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-2/2-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-2/2-out.json)
+((/course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-2/2-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-2/2-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+/course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-3/3-in.json contains something other than JSON
+()
+((passed 0) (total 1) (partial-score 0))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-4/4-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-4/4-out.json)
+((/course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-4/4-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-4/4-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-5/5-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-5/5-out.json)
+---------------------------------
+(*** score 0)
+(*** on)
+'(#hasheq((map . ((0 (0 #hasheq((color . "yellow") (shape . "star"))))))
+          (players
+           .
+           (#hasheq((name . "Tom")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "red") (shape . "star"))
+                      #hasheq((color . "red") (shape . "star"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle")))))
+            #hasheq((name . "Jerry")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "yellow") (shape . "8star"))
+                      #hasheq((color . "yellow") (shape . "8star"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle")))))
+            #hasheq((name . "Carol")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle"))
+                      #hasheq((color . "purple") (shape . "circle")))))))
+          (tile*
+           .
+           (#hasheq((color . "purple") (shape . "circle"))
+            #hasheq((color . "purple") (shape . "circle"))
+            #hasheq((color . "purple") (shape . "circle"))
+            #hasheq((color . "purple") (shape . "circle"))
+            #hasheq((color . "purple") (shape . "circle"))
+            #hasheq((color . "purple") (shape . "circle"))
+            #hasheq((color . "purple") (shape . "circle")))))
+  (("Tom" "dag" "win")
+   ("Jerry" "dag" "a cheat" "non-adjacent-coordinate")
+   ("Carol" "ldasg")))
+(*** expected)
+'((("Carol") ("Jerry" "Tom")))
+(*** but received)
+'(((plain fast with-newline plain-unicode) ((() ("Jerry" "Tom")))))
+
+
+()
+((passed 0) (total 1) (partial-score 0))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-6/6-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-6/6-out.json)
+((/course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-6/6-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-6/6-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-7/7-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-7/7-out.json)
+((/course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-7/7-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-7/7-out.json))
+((passed 1) (total 1) (partial-score 1))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-8/8-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-8/8-out.json)
+---------------------------------
+(*** score 0)
+(*** on)
+'(#hasheq((map . ((0 (0 #hasheq((color . "purple") (shape . "diamond"))))))
+          (players
+           .
+           (#hasheq((name . "Matthias1")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "blue") (shape . "diamond"))
+                      #hasheq((color . "green") (shape . "diamond"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))
+            #hasheq((name . "Matthias2")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "blue") (shape . "diamond"))
+                      #hasheq((color . "blue") (shape . "circle"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))
+            #hasheq((name . "Matthias3")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "green") (shape . "star"))
+                      #hasheq((color . "green") (shape . "circle"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))
+            #hasheq((name . "Matthias4")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))))
+          (tile*
+           .
+           (#hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "blue") (shape . "diamond"))
+            #hasheq((color . "blue") (shape . "square")))))
+  (("Matthias1" "dag" "a cheat" "no-fit")
+   ("Matthias2" "dag" "new-tiles" 7)
+   ("Matthias3" "dag" "take-turn" 2)
+   ("Matthias4" "ldasg" "win")))
+(*** expected)
+'((("Matthias2") ("Matthias1" "Matthias3" "Matthias4")))
+(*** but received)
+'(((plain fast with-newline plain-unicode)
+   ((() ("Matthias1" "Matthias3" "Matthias4")))))
+
+
+()
+((passed 0) (total 1) (partial-score 0))
+(testing /course/cs4500f23/ta/23SwDev/Code/9/xbaddies)
+(testing /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-9/9-in.json /course/cs4500f23/ta/tedium-workdir/github/stoic-armadillos/9/Tests-9/9-out.json)
+---------------------------------
+(*** score 0)
+(*** on)
+'(#hasheq((map . ((0 (0 #hasheq((color . "purple") (shape . "diamond"))))))
+          (players
+           .
+           (#hasheq((name . "Matthias1")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "blue") (shape . "diamond"))
+                      #hasheq((color . "green") (shape . "diamond"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))
+            #hasheq((name . "Matthias2")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "blue") (shape . "diamond"))
+                      #hasheq((color . "blue") (shape . "circle"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))
+            #hasheq((name . "Matthias3")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "green") (shape . "star"))
+                      #hasheq((color . "green") (shape . "circle"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))
+            #hasheq((name . "Matthias4")
+                    (score . 0)
+                    (tile*
+                     .
+                     (#hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star"))
+                      #hasheq((color . "orange") (shape . "8star")))))))
+          (tile*
+           .
+           (#hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "orange") (shape . "8star"))
+            #hasheq((color . "blue") (shape . "diamond"))
+            #hasheq((color . "blue") (shape . "square")))))
+  (("Matthias1" "dag" "a cheat" "tile-not-owned")
+   ("Matthias2" "ldasg" "setup")
+   ("Matthias3" "ldasg" "take-turn" 2)
+   ("Matthias4" "ldasg" "a cheat" "non-adjacent-coordinate")))
+(*** expected)
+'((() ("Matthias2" "Matthias4" "Matthias3" "Matthias1")))
+(*** but received)
+'(((plain fast with-newline plain-unicode)
+   ((("Matthias3") ("Matthias2" "Matthias1" "Matthias4")))))
+
+
+()
+((passed 0) (total 1) (partial-score 0))

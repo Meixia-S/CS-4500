@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="xstrategy:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/xstrategy_jar</output-path>
+    <root id="archive" name="xstrategy.jar">
+      <element id="module-output" name="Q" />
+      <element id="library" level="project" name="xscore" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

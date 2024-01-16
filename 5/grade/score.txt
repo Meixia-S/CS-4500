@@ -1,0 +1,17 @@
+Delivery
+0/5 pts: Deliverable 5/xscore does not have executable permissions
+5/5 pts: Deliverable Q/Planning/referee-state.md exists
+0/5 pts: Deliverable Q/Player/strategy.PP not found
+5/5 pts: Delivery of test files
+
+Functionality
+0/25 pts: Unable to run tests (see test-results.txt)
+15/25 pts: 3 valid tests (see test-audit-results.txt)
+25/25 bonus pts (other teams failing your tests)
+
+Inspection
+111/125 pts: See inspection.md
+
+Keeping your higher score of 171 from the previous test run, vs 161 from this run. Please make sure you fix your code based on the failures in the new test logs, however!
+
+Total: 171/195 pts

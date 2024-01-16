@@ -1,0 +1,50 @@
+{
+  "port" : 10000,
+  "server-tries" : 2,
+  "server-wait" : 20,
+  "wait-for-signup" : 3,
+  "quiet" : false,
+  "ref-spec" : {
+    "state0" : { "map" : [
+                          [0,
+                            [0,
+                              {"color" : "yellow" , "shape" : "star"}
+                            ]
+                          ]
+                        ],
+                          "tile*" : [
+                            {"color" : "purple", "shape": "clover"},
+                            {"color" : "green", "shape": "star"},
+                            {"color" : "purple", "shape": "clover"},
+                            {"color" : "purple", "shape": "clover"},
+                            {"color" : "orange", "shape": "diamond"},
+                            {"color" : "purple", "shape": "clover"}],
+                          "players" : [  {"score" : 0,
+                            "name" : "Meixia",
+                            "tile*":  [
+                              {"color" : "green", "shape": "circle"},
+                              {"color" : "blue", "shape": "8star"},
+                              {"color" : "purple", "shape": "clover"},
+                              {"color" : "purple", "shape": "clover"},
+                              {"color" : "yellow", "shape": "diamond"},
+                              {"color" : "red", "shape": "circle"}]},
+                            {"score" : 0,
+                              "name" : "Aiden",
+                              "tile*":  [
+                                {"color" : "red", "shape": "star"},
+                                {"color" : "green", "shape": "square"},
+                                {"color" : "purple", "shape": "clover"},
+                                {"color" : "purple", "shape": "clover"},
+                                {"color" : "purple", "shape": "clover"},
+                                {"color" : "purple", "shape": "clover"}]}
+                          ]
+              },
+    "quiet" : false,
+    "config-s" :{
+      "qbo" : 8,
+      "fbo" : 6
+    },
+    "per-turn" : 5,
+    "observe" : false
+  }
+}
