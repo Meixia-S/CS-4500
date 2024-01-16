@@ -1,3 +1,328 @@
+# ambidextrous-mice
+__________________________________________________________________________________________
+## Milestone 4 - The Score
+
+### Purpose of the Added Functionality Program At This Stage:
+The purpose of the current program is to equip our game-state component with the following two pieces: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) functionality for rendering the current state, including its map, graphically <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) functionality for scoring a placement (assuming the move is legal)
+
+### Folder and Files:
+ 
+ <table> <tr> <th>
+                  Folder Name(s)
+             </th>
+             <th>
+                  Filepath
+             </th>
+             <th>
+                  Description
+             </th>
+       </tr>
+         <tr>
+             <td>
+                  Q
+             </td>
+             <td>
+                  ambidextrous-mice/Q
+             </td>
+             <td>
+                  contains the Common and Planning folder and their repective files
+             </td>
+       </tr>
+         <tr>
+             <td>
+                  4/Tests
+             </td>
+             <td>
+                  ambidextrous-mice/4/Tests
+             </td>
+             <td>
+                  The folderss that contain the Json test files
+             </td>
+       </tr>
+ </table> <table>
+       <tr>
+             <th>
+                  File Name
+             </th>
+             <th>
+                  Filepath
+             </th>
+             <th>
+                  Description
+             </th>
+       </tr>
+       <tr>
+             <td>
+                  Game_State.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Common/java/src/Game_State.java
+             </td>
+             <td>
+                  the class that represents the game state 
+             </td>
+       </tr>
+         <tr>
+             <td>
+                  Game_State_GUI.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Common/java/src/Game_State_GUI.java
+             </td>
+             <td>
+                  the class that handles the visiual representation of the game state
+             </td>
+       </tr>
+        <tr>
+             <td>
+                  XLegal.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Common/java/src/XLegal.java
+             </td>
+             <td>
+                  class that reads the Json STDIN and returns Json STDOUT (a boolean or JMap)
+             </td>
+       </tr> 
+        <tr>
+             <td>
+                  Test Description.md
+             </td>
+             <td>
+                  ambidextrous-mice/4/Tests/Test Description.md
+             </td>
+             <td>
+                  a file that explains what is being tested/checked in each test in the Tests folder
+             </td>
+       </tr> </table>	  	  
+
+### Tests:
+All JSON test specific to this phase of the project can be run using the jar file using ./xlegal command.
+
+All tests are located in the 4/Tests folder.
+
+### UML Class Diagram:
+![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/e11879f6-a270-4aa7-a098-17cefc8ad56f)
+__________________________________________________________________________________________________________________________
+## Milestone 5 - The Strategy
+
+### Purpose of the Added Functionality Program At This Stage:
+The purpose of the current program is to implement a strategy interface and two concrete variants:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) The first one is called dag <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) The second is called ldasg  <br>
+The lexicographic ordering on tiles says that tile p is less than tile q if p’s shape is less than q’s. If p’s shape is 
+identical to q’s, p is below q iff p’s color is below q’s. The order of the shapes and colors are: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shape: star < 8star < square < circle < clover < diamond <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Color: red < green < blue < yellow > orange < purple <br>
+We then equip the strategy component with an iteration functionality. Starting from some game state, the piece of 
+functionality applies a given strategy as far as possible to obtain the longest possible series of placements or 
+a replacement decision or a pass decision.
+
+### Tests:
+All JSON test specific to this phase of the project can be run using the jar file using ./xscore command.
+
+All tests are located in the 5/Tests folder.
+
+### UML Class Diagram:
+![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/26245aa9-0edc-4e5e-bc63-ba37f8ecb011)
+__________________________________________________________________________________________________________________________
+## Milestone 6 - The Game
+
+### Purpose of the Added Functionality Program At This Stage:
+The purpose of the current program is to create and implement the referee and players in the program: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The player should be able to pick a strategy to implement and  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The referee should be able to communicate with the players and game state <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; until the game is over. Then they announce the winner(s) and end the game. <br>
+As the title implies this compelents the basic operations and comonents for the program to conduct a full game.
+
+### Folder and Files:
+ 
+ <table> <tr> <th>
+                  Folder Name(s)
+             </th>
+             <th>
+                  Filepath
+             </th>
+             <th>
+                  Description
+             </th>
+       </tr>
+         <tr>
+             <td>
+                  Referee
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Referee
+             </td>
+             <td>
+                  contains the referee class
+             </td>
+       </tr>
+         <tr>
+             <td>
+                  6/Tests
+             </td>
+             <td>
+                  ambidextrous-mice/6/Tests
+             </td>
+             <td>
+                  The folderss that contain the Json test files
+             </td>
+       </tr>
+ </table> <table>
+       <tr>
+             <th>
+                  File Name
+             </th>
+             <th>
+                  Filepath
+             </th>
+             <th>
+                  Description
+             </th>
+       </tr>
+       <tr>
+             <td>
+                  player.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Player/player.java
+             </td>
+             <td>
+                  the class that represents the players
+             </td>
+       </tr>
+         <tr>
+             <td>
+                  referee.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Referee/referee.java
+             </td>
+             <td>
+                  the class that represents the referee
+             </td>
+       </tr>
+        <tr>
+             <td>
+                  XStrategy.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Player/XStrategy.java
+             </td>
+             <td>
+                  class that reads the Json STDIN and returns Json STDOUT (1Placement)
+             </td>
+       </tr> </table>	  	  
+
+### Tests:
+All JSON test specific to this phase of the project can be run using the jar file using ./xstrategy command.
+
+All tests are located in the 6/Tests folder.
+
+### UML Class Diagram:
+![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/c27542e9-6819-45ee-ab35-cdd215519cbb)
+__________________________________________________________________________________________________________________________
+## Milestone 7 - The Clean Up
+
+### Purpose of the Added Functionality Program At This Stage:
+The purpose of the current program is to create and implement the referee and players in the program: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The player should be able to pick a strategy to implement and  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The referee should be able to communicate with the players and game state <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; until the game is over. Then they announce the winner(s) and end the game. <br>
+As the title implies this compelents the basic operations and comonents for the program to conduct a full game.
+
+### Folder and Files:
+ 
+ <table> <tr> <th>
+                  Folder Name(s)
+             </th>
+             <th>
+                  Filepath
+             </th>
+             <th>
+                  Description
+             </th>
+       </tr>
+         <tr>
+             <td>
+                  Referee
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Referee
+             </td>
+             <td>
+                  contains the referee class
+             </td>
+       </tr>
+         <tr>
+             <td>
+                  6/Tests
+             </td>
+             <td>
+                  ambidextrous-mice/6/Tests
+             </td>
+             <td>
+                  The folderss that contain the Json test files
+             </td>
+       </tr>
+ </table> <table>
+       <tr>
+             <th>
+                  File Name
+             </th>
+             <th>
+                  Filepath
+             </th>
+             <th>
+                  Description
+             </th>
+       </tr>
+       <tr>
+             <td>
+                  player.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Player/player.java
+             </td>
+             <td>
+                  the class that represents the players
+             </td>
+       </tr>
+         <tr>
+             <td>
+                  referee.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Referee/referee.java
+             </td>
+             <td>
+                  the class that represents the referee
+             </td>
+       </tr>
+        <tr>
+             <td>
+                  XStrategy.java
+             </td>
+             <td>
+                  ambidextrous-mice/Q/Player/XStrategy.java
+             </td>
+             <td>
+                  class that reads the Json STDIN and returns Json STDOUT (1Placement)
+             </td>
+       </tr> </table>	  	  
+
+### Tests:
+All JSON test specific to this phase of the project can be run using the jar file using ./xstrategy command.
+
+All tests are located in the 6/Tests folder.
+
+### UML Class Diagram:
+![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/c27542e9-6819-45ee-ab35-cdd215519cbb)
+_____________________________________________________________________________________________________________________________________________
+
 # stoic-armadillos
 _____________________________________________________________________________________________________________________________________________
 ## Milestone 8 - The Observer
