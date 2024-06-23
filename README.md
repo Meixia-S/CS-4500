@@ -1,4 +1,354 @@
-# ambidextrous-mice
+# stoic-whales | Group 1
+_________________________________________________________________________________________________________________________________________
+
+## Program A - JSON
+
+### Purpose of the Program:
+
+This program has been created to take in one well-formed JSON from STDIN and returns STDOUT as a string. The three main cases are as follows: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) Any dictionary keys are not returned  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) All non key integers are replaced with the string "number" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3) All non key strings are returned without any manipulation <br>
+The program can be run on command line with the prompt ./xjson followed by the JSON STDIN. <br>
+
+### Tests:
+
+A single test was created following the n-in.json and n-out.json method specified in the homework assignment directions <br>
+(we assigned n to be 0). A n-in.json test can be fed into ./xjson by running ./xjson < Tests/n-in.json <br> <br>
+The files can be found in the Tests folder. File path: stoic-whales/A/Tests. 
+
+### Directory Organization:
+
+NOT all files and folders are presented in this display.
+The focus is on the location of the code, java jar, json library, and xjson.iml file.
+
+* code:         stoic-whale/A/Other/src/Main.java
+* java jar:     stoic-whale/A/Other/A.jar
+* json library: stoic-whale/A/Other/lib/jackson-core-2.14.0.jar
+* xjson.iml:    stoic-whale/A/Other/xjson.iml
+<pre>
+                                   stoic-whales
+                                        |
+         ________________________________________________
+           |             |           |                 |                 
+        .idea        .vscode         A              ReadMe.md
+                                     |
+                        _____________________
+                          |       |        |         
+                        Other   Tests    xjson
+                          |       |___________________________________________
+             __________________________________________________      _________|_________
+                |         |         |          |            |           |           |
+             .idea       lib       src       A.jar      xjson.iml    0-in.json   0-out.json
+                          |         |
+                          |     _____________________
+                          |         |          |
+                          |       .DS_Store   Main.java
+             __________________________________
+              |           |
+          .DS_Store   jackson-core-2.14.0.jar  
+ </pre>         
+_________________________________________________________________________________________________________________________________________
+## Program B - GUI
+
+### Purpose of the Program:
+
+This program takes in a well-formed and valid JSON STDIN input and outputs an image of all the specified tiles side by side. The image is then saved into the directory with the given file name and then prints the string "Done" once the image has been saved. After that visual que, the user is then able to enter in another well-formed and valid STDIN and another image will be created and saved (unless the same file name is given which then leads to the new image to replace the old one). <br>
+The program can be run on command line with the prompt xvfb-run ./xjson followed by the JSON STDIN.
+
+### Tests:
+
+None
+
+### Directory Organization:
+
+NOT all files and folders are presented in this display.
+The focus is on the location of the code, java jar, image folder, javaFX library, and pom.xml file.
+<em> Due to using maven software with our javaFX GUI we needed to feed in the Jackson library in a pom.xml file </em>
+
+* code:           stoic-whale/B/Other/xgui/src/main/java/com/xgui/Main.java
+* code2:          stoic-whale/B/Other/xgui/src/main/java/com/xgui/StartApplication.java
+* java jar:       stoic-whale/B/Other/xgui.jar
+* image folder:   stoic-whale/B/Other/xgui/images
+* javaFX library: stoic-whale/A/Other/lib/...
+* pom.xml:        stoic-whale/B/Other/xgui/pom.xml
+ <pre>
+                          stoic-whales
+                               |
+  ______________________________________________________________
+     |             |         |       |         |            |                 
+   .idea        .vscode      A       Q         B         ReadMe.md
+                                               |
+                            _________________________
+                              |        |           |
+                            Other   .DS_Store     xgui
+                              |
+         ___________________________________________________________________
+         |              |                               |            |
+   .idea/artifacts     lib                            xgui      .DS_Store
+                        |                               |
+  ______________________|_______________________        |_____________________________________________________       
+       |                      |               |             |             |              |          |
+ javafx-sdk-20.0.2   javafx-linux-sdk-21    7 more      src/main/java     xgui.jar     images     pom.xml
+                                                            |                            |
+                                       ________________________________________        30 png
+                                          |            |             |
+                                        META-INF   com/xgui    moduke-info.java
+                                                       |
+                                                ___________________________________
+                                                    |                 |
+                                                Main.java    StartApplication.java
+ 
+</pre>
+_________________________________________________________________________________________________________________________________________
+## Program 2 - The Map
+
+### Purpose of the Program At This Stage:
+
+The Q-Game program that is heavily based off the well-known Qwirkle board game is currently in its earliest stage. The purpose of the current program is to present a data representation of the game map that supports 3 functionalities described on the assignment description. They are as follows: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)	Creating the map with a beginning tile (aka the referee’s tile) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)	Extend the map with a different tile by placing it beside an already placed tile regardless of the color and shape <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)	Determining all playable moves based on the game state based on a given tile
+
+### Folder and Files: 
+<pre> <table> <tr>
+      <th> Folder Name(s) </th>
+      <th> Filepath </th>
+      <th> Description </th>
+    </tr>
+    <tr>
+      <td> Common </td>
+      <td>stoic-whales/Q/Common </td>
+      <td>folder that contains all the java files needed for the program to work, however each
+file contains only the link to its corresponding file placed in another folder </td>
+    </tr>
+    <tr>
+      <td> Planning </td>
+      <td>stoic-whales/Q/Planning </td>
+      <td>contains the state.md file </td>
+    </tr>
+     <tr>
+      <td> Q_Game </td>
+      <td>stoic-whales/Q/Q_Game </td>
+      <td>contains all the java files with the code and along with the nested folders (the files
+that are linked to the ones in the Common folder) </td>
+    </tr>
+     <tr>
+      <td> test/java/org/common </td>
+      <td>stoic-whales/Q/Q_Game/src/test/java/org/common </td>
+      <td>contains all the java test files </td>
+    </tr> </table> <table> <tr>
+      <th> File Name </th>
+      <th> Filepath </th>
+      <th> Description </th>
+    </tr>
+    <tr>
+      <td> Board </td>
+      <td>stoic-whales/Q/Common/Board.java <b> or </b> 
+stoic-whalesQ/Q_Game/src/main/java/org/common/Board.java </td>
+      <td>contains the interface for the map </td>
+    </tr>
+    <tr>
+      <td> Map </td>
+      <td>stoic-whales/Q/Common/Map.java <b> or </b>  
+stoic-whalesQ/Q_Game/src/main/java/org/common/Map.java </td>
+      <td>contains the Map class that implements the Board interface </td>
+    </tr>
+     <tr>
+      <td> Rule </td>
+      <td>stoic-whales/Q/Common/Rule.java <b> or </b>  
+stoic-whalesQ/Q_Game/src/main/java/org/common/Rule.java </td>
+      <td>contains the interface for the rules pertaining to the game </td>
+    </tr>
+    <tr>
+      <td> Rule_Extend_A_Side </td>
+      <td>stoic-whales/Q/Common/Rule_Extend_A_Side.java <b> or </b>  
+stoic-whalesQ/Q_Game/src/main/java/org/common/Rule_Extend_A_Side.java </td>
+      <td>contains the Rule_Extend_A_Side class that implements the Rule interface </td>
+    </tr>
+    <tr>
+      <td> Rule_Must_Match_Neighbors </td>
+      <td>stoic-whales/Q/Common/Rule_Must_Match_Neighbors.java <b> or </b>  
+stoic-whalesQ/Q_Game/src/main/java/org/common/Rule_Must_Match_Neighbors.java </td>
+      <td>contains the Rule_Must_Match_Neighbors class that implements the Rule interface </td>
+    </tr>
+     <tr>
+      <td> Tile </td>
+      <td>stoic-whales/Q/Common/Tile.java <b> or </b>  
+stoic-whalesQ/Q_Game/src/main/java/org/common/Tile.java </td>
+      <td>contains the Tile interface for the tile pieces </td>
+    </tr>
+      <tr>
+      <td> Valid_Tile </td>
+      <td>stoic-whales/Q/Common/Valid_Tile.java <b> or </b>  
+stoic-whalesQ/Q_Game/src/main/java/org/common/Valid_Tile.java </td>
+      <td>contains the Valid_Tile class that implements the Tile interface </td>
+    </tr>
+    <tr>
+      <td> Board_Test </td>
+      <td>stoic-whales/Q/Q_Game/src/test/java/org/common/Board_Test.java </td>
+      <td>contains all the tests that exist within the class 
+(ones that support all the required functionalities)</td>
+    </tr>  
+    <tr>
+      <td> Rule_Extends_A_Side_Test </td>
+      <td>stoic-whales/Q/Q_Game/src/test/java/org/common/Rule_Extends_A_Side_Test.java </td>
+      <td>contains the tests that checks that the methods correctly enforce the rule </td>
+    </tr>
+     <tr>
+      <td> Rule_Must_Match_Neighbors_Test </td>
+      <td>stoic-whales/blob/main/Q/Q_Game/src/test/java/org/common/Rule_Must_Match_Neighbors_Test.java </td>
+      <td>contains the tests that checks that the methods correctly enforce the rule </td>
+    </tr> 
+    <tr>
+      <td> Valid_Tile_Test </td>
+      <td>stoic-whales/blob/main/Q/Q_Game/src/test/java/org/common/Valid_Tile_Test.java </td>
+      <td>making sure Tiles are correctly assembled </td>
+    </tr> </table> </pre>  
+
+### Tests:
+
+All tests can be run by running ./x_test
+
+FileName: Board_Test <br>
+Filepath: stoic-whales/blob/main/Q/Q_Game/src/test/java/org/common/BoardTest.java <br>
+Purpose: Testing the methods that are within the Map class <br>
+
+FileName: Rule_Extends_A_Side_Test <br>
+Filepath: stoic-whales/blob/main/Q/Q_Game/src/test/java/org/common/Rule_Extends_A_SideTest.java <br>
+Purpose: Making sure the rule is followed all formates of the board <br>
+
+FileName: Rule_Must_Match_Neighbors_Test <br>
+Filepath: stoic-whales/blob/main/Q/Q_Game/src/test/java/org/common/Rule_Extends_A_SideTest.java <br>
+Purpose: Making sure the rule is followed all formates of the board <br>
+
+FileName: Valid_Tile_Test <br>
+Filepath: stoic-whales/blob/main/Q/Q_Game/src/test/java/org/common/Valid_Tile_Test.java <br>
+Purpose: Making sure Tiles are correctly assembled <br>
+
+### UML Class Diagram:
+![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/3770a704-a223-4edd-9e2a-903c7ce25919)
+_________________________________________________________________________________________________________________________________________ 
+## Program C - TCP
+
+### Purpose of the Program:
+
+This program has been created to take in one well-formed JSON from STDIN sent in by the client and returns STDOUT as a string on the server side. The three main cases are as follows: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) Any dictionary keys are not returned  <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) All non key integers are replaced with the string "number" <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3) All non key strings are returned without any manipulation <br>
+The program can be run on command line with the prompt ./xtcp followed by joining the localhost server and the the JSON STDIN. <br>
+
+### Tests:
+
+Three tests were created following the n-in.json and n-out.json method specified in the homework assignment directions. <br>
+A n-in.json test can be fed into ./xtcp by running ./xtcp < Tests/n-in.json <br> <br>
+The files can be found in the Tests folder. File path: stoic-whales/C/Tests. 
+
+### Directory Organization:
+
+NOT all files and folders are presented in this display.
+The focus is on the location of the code, java jar, json library, and xtcp.iml file.
+
+* code: stoic-whales/C/Other/.xtcp/src/Main.java
+* code2: stoic-whales/C/Other/.xtcp/src/Json_Parser_A.java
+* code3: stoic-whales/C/Other/.xtcp/src/Server.java
+* java jar: stoic-whales/C/Other/.xtcp/xtcp.jar
+* Json Library: stoic-whales/C/Other/lib/jackson.core-2.14.0
+* xtcp.iml: stoic-whales/C/Other/.xtcp/xtcp.iml
+
+<pre>
+                          stoic-whales
+                               |
+  ______________________________________________________________
+     |             |         |      |       |      |        |                 
+   .idea        .vscode      A      B       C      Q    ReadMe.md
+                                            |
+                               _____________________________________
+                                  |      |        |        |
+                                .idea  Other    Tests  .DS_Store
+                                         |        |
+              ___________________________|        |________________________________________________________________
+                |     |       |        |              |           |          |        |           |          |
+               lib   idea  .DS_Store .xtcp        0-in.json 0-out.json  1-in.json 1-out.json  0-in.json 0-out.json
+                |                      |
+  ______________|_______________       |______________________________________________________________
+    |              |                    |      |      |          |         |              |
+.DS_Store   jackson.core-2.14.0        idea   src  .DS_Store  xtcp.iml  xtcp.jar  out/production/xtcp        
+                                               |
+                                     __________|_______________________________________________________
+                                        |          |              |               |            |
+                                     META-INF  .DS_Store  Json_Parser_A.java   Main.java   Server.java
+</pre>
+_________________________________________________________________________________________________________________________________________ 
+## Program 3 - The State
+
+### Purpose of the Program At This Stage:
+
+The purpose of the current program is to present a data representation of the referee's game state and of the player's information that is given to the player during their turn. Both these representations support the 3 functionalities described on the assignment description. They are as follows: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1)	Extracting the data to be sent to the player during their turn <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)	Completing a turn action <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3)	Checking whether a proposed placement by the currently active player satisfies the rules of The Q Game
+
+### Folder and Files: 
+<pre> <table> <tr>
+        <th> Folder Name(s) </th>
+        <th> Filepath </th>
+        <th> Description </th>
+    </tr>
+    <tr>
+        <td> Common </td>
+        <td>stoic-whales/Q/Common </td>
+        <td>folder that contains all the java files needed for the program to work. Each
+  file contains only the link to its corresponding file placed in another folder </td>
+    </tr>
+     <tr>
+        <td> Planning </td>
+        <td>stoic-whales/Q/Planning </td>
+        <td>contains the player_interface.md file and the other planning memos </td>
+    </tr>   
+        <td> Q_Game </td>
+        <td>stoic-whales/Q/Q_Game </td>
+        <td>contains all the java files with the code and along with the nested folders 
+  (the files that are linked to the ones in the Common folder) </td>
+    </tr> </table> <table> <tr>
+        <th> File Name </th>
+        <th> Filepath </th>
+        <th> Description </th>
+    </tr>
+     <tr>
+        <td> Game_State </td>
+        <td>stoic-whales/Q/Q_Game/src/test/java/org/common/Q_Game_State.java </td>
+        <td>contains the interface that represents the referee's game state </td>
+    </tr>
+    <tr>
+        <td> Players_Game_State </td>
+        <td>stoic-whales/Q/Q_Game/src/test/java/org/common/Player_Game_State.java </td>
+        <td>the class that allows the referee to send important and relevent 
+  information to the player during their turn </td>
+    </tr> 
+     <tr>
+        <td> Q_Game_State </td>
+        <td>stoic-whales/Q/Q_Game/src/test/java/org/common/Q_Gamr_State.java </td>
+        <td>contains the class that implements the Game_State interface </td>
+    </tr>
+     <tr>
+        <td> Tile </td>
+        <td>stoic-whales/Q/Q_Game/src/test/java/org/common/Tile.java </td>
+        <td> We got rid of the Tile interface and refactored the Valid_Tile
+class to Tile</td>
+    </tr> </table> </pre>
+ * Player: An empty class that will be used to represent individual players in the future
+    
+### Tests:
+All JSON test specific to this phase of the project can be run using the jar file using ./xmap command.
+
+All tests are located in the 3/Tests folder.
+
+### UML Class Diagram:
+![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/bfae8d94-6c0a-45c5-b1d8-8e39087e2359)
+
+# ambidextrous-mice | Group 2
 __________________________________________________________________________________________
 ## Milestone 4 - The Score
 
