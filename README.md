@@ -673,7 +673,7 @@ All tests are located in the 6/Tests folder.
 ![diagram](https://media.github.khoury.northeastern.edu/user/15076/files/c27542e9-6819-45ee-ab35-cdd215519cbb)
 _____________________________________________________________________________________________________________________________________________
 
-# stoic-armadillos
+# stoic-armadillos | Group 3
 _____________________________________________________________________________________________________________________________________________
 ## Milestone 8 - The Observer
 
