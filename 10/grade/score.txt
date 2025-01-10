@@ -14,3 +14,6 @@ Inspection
 60/110 pts: See inspection.md
 
 Total: 170/530 pts
+- This low score resulted from the improper use of multithreading, which caused the entire 
+code to malfunction when attempting to play the game through the server. However, the 
+game itself functioned correctly and successfully passed all the provided tests
